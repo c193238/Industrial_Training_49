@@ -23,13 +23,15 @@ x = 5
 y = "Hello, Python learners!"
 
 # You can print the variables to see their values.
-# print(x)
-# print(y)
+print(x)
+print(y)
 
 # Assignment 1: Create two variables, one holding a number and the other holding your name. Then print both.
 # Write your code below:
-age = 22
-name = "Ibrahim bin Karim"
+num = 38
+name = "Bushra"
+print(num)
+print(name)
 
 # print("Age: ", age, end="; ")
 # print("Name: ", name)
@@ -53,6 +55,15 @@ d = True            # bool
 # Assignment 2: Create variables of different types and use the type() function to check their types.
 # Write your code below:
 
+num1 = 10
+num2 = 4.54
+name= "Nishat Noushin"
+bool= True
+ 
+print(type(num1))
+print(type(num2))
+print(type(name))
+print(type(True))
 
 # Section 3: Variable Naming Conventions and Industry Standards
 # -------------------------------------------------------------
@@ -74,6 +85,14 @@ _bad_name = 23
 # Assignment 3: Fix the bad variable name above and create three more variables with good naming practices.
 # Write your code below:
 
+bad_num = 38
+good_num1 = 12
+good_num2 = 38
+good_num3 = 16
+print(bad_num)
+print(good_num1)
+print(good_num2)
+print(good_num3)
 
 # Section 4: Python's Dynamic Typing
 # ----------------------------------
@@ -81,16 +100,20 @@ _bad_name = 23
 
 # Example 4: Dynamic Typing
 var = "I am a string"
-print(var)
+# print(var)
 
 var = 42
-print(var)
+# print(var)
 
 # The variable 'var' changes type from str to int, demonstrating Python's dynamic typing.
 
 # Assignment 4: Create a variable, assign it a value of one type, then reassign it to a different type and print both.
 # Write your code below:
 
+var = "Bangladesh"
+print(var)
+var = 38.16
+print(var)
 
 # Congratulations on completing this part of the Python workshop!
 # Review the assignments, try to solve them, and check your understanding of variables and data types.
