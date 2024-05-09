@@ -90,6 +90,31 @@ with open('users.json', 'r') as file:
 # Assignments
 # -----------
 # Assignment 1: Write a script that reads a CSV file containing product information and converts it into a JSON file.
+import csv
+import json
+
+def csv_to_json(csv_file, json_file):
+    # Open the CSV file for reading
+    with open(csv_file, 'r', newline='', encoding='utf-8') as csvfile:
+        # Initialize a dictionary to hold the data
+        data = []
+        # Create a CSV reader object
+        reader = csv.DictReader(csvfile)
+        # Iterate over each row in the CSV and add it to the data dictionary
+        for row in reader:
+            data.append(row)
+
+    # Write the data dictionary to a JSON file
+    with open(json_file, 'w', encoding='utf-8') as jsonfile:
+        json.dump(data, jsonfile, indent=4)
+
+# Example usage:
+csv_to_json('products.csv', 'products.json')
+
+
+
+
+
 # Assignment 2: Create a log file writer that appends log messages to a file with timestamps.
 
 # Congratulations on completing the comprehensive section on Python file I/O and JSON handling!

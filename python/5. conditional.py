@@ -44,8 +44,17 @@ elif score >= 70:
 else:
     print("Grade: D or F")
 
-# Assignment 1: Write a Python script that determines if a number is positive, negative, or zero using if-elif-else.
+# Assignment 1: 
+# Write a Python script that determines if a number is positive, negative, or zero using if-elif-else.
 # Write your code below:
+
+number = 38
+if number < 0:
+    print("Negative")
+elif number > 0:
+    print("Positive")
+else:
+    print("Zero")
 
 
 # Section 2: Logical and Boolean Operations
@@ -70,6 +79,13 @@ else:
 # Assignment 2: Create a script that checks if a person is eligible for a senior citizen discount based on age and residency.
 # Write your code below:
 
+age = 40
+residency = "no"
+
+if age >= 65 and residency == "yes":
+    print("You are eligible for a senior citizen discount.")
+else:
+    print("You are not eligible for a senior citizen discount.")
 
 # Section 3: Real-World Applications
 # -----------------------------------
@@ -95,6 +111,16 @@ print(f"Ticket price: ${price}")
 
 # Assignment 3: Write a script that simulates a basic login system. Check username and password correctness.
 # Write your code below:
+
+database = {'user1': 'password1', 'user2': 'password2', 'user3': 'password3'}
+
+username = 'user2'
+password = 'password3'
+
+if (username in database) and (database[username] == password):
+    print("Login successful!", username)
+else:
+    print("Invalid password. Please try again.")
 
 
 
